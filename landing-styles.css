@@ -305,6 +305,10 @@ body {
   font-weight: 700;
   box-shadow: 0 4px 14px var(--orange-glow);
   transition: var(--transition-fast);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .btn-cta-nav:hover {
@@ -1361,21 +1365,28 @@ body {
 
 .barber-img-container {
   width: 100%;
-  height: 250px;
-  background: #111216;
+  height: 330px;
+  background: radial-gradient(circle at 50% 25%, #232530 0%, #111216 100%);
   position: relative;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .barber-img-container {
+    height: 290px;
+  }
 }
 
 .barber-img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s;
+  object-position: top center;
+  transition: transform 0.4s ease;
 }
 
 .barber-profile-card:hover .barber-img-container img {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 .role-badge {
@@ -1903,4 +1914,334 @@ body {
 @keyframes slideToast {
   from { transform: translateY(20px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+
+/* ==========================================================================
+   OTIMIZAÇÃO RESPONSIVA INTEGRAL PARA MOBILE (MAX-WIDTH: 768px & 420px)
+   Engenharia UI/UX Mobile-First • Touch Target 48px • Anti-Zoom iOS
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  /* Container & Seções */
+  .container {
+    padding: 0 16px;
+  }
+  
+  .section-padding {
+    padding: 55px 0;
+  }
+
+  /* Header Navbar Mobile */
+  .main-navbar {
+    padding: 10px 0;
+  }
+
+  .navbar-container {
+    padding: 0 16px;
+    gap: 8px;
+  }
+
+  .brand-link {
+    gap: 9px;
+    min-width: 0;
+  }
+
+  .brand-logo-circle {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 9px;
+  }
+
+  .brand-text {
+    min-width: 0;
+  }
+
+  .brand-name {
+    font-size: 0.98rem;
+    letter-spacing: 0.3px;
+    line-height: 1.15;
+    white-space: nowrap;
+  }
+
+  .brand-badge {
+    font-size: 0.58rem;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+    line-height: 1;
+    margin-top: 2px;
+  }
+
+  .navbar-actions {
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .btn-cta-nav {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    gap: 6px;
+    white-space: nowrap;
+    border-radius: 8px;
+  }
+
+  /* Top Announcement Bar */
+  .top-announcement-bar {
+    padding: 7px 12px;
+    font-size: 0.74rem;
+    text-align: center;
+  }
+
+  /* Hero Section Mobile */
+  .hero-section {
+    padding: 35px 0 55px;
+  }
+
+  .hero-container {
+    gap: 36px;
+  }
+
+  .hero-pill-badge {
+    font-size: 0.68rem;
+    padding: 5px 12px;
+    margin-bottom: 14px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.9rem, 7.5vw, 2.5rem);
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.55;
+    margin-bottom: 26px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero-cta-group .btn-primary-glow,
+  .hero-cta-group .btn-secondary-glass {
+    width: 100%;
+    justify-content: center;
+    padding: 15px 20px;
+    font-size: 0.98rem;
+    text-align: center;
+  }
+
+  .hero-social-proof {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 18px;
+  }
+
+  /* Calculadora de Economia Mobile */
+  .calculator-wrapper {
+    padding: 26px 18px;
+    border-radius: 20px;
+  }
+
+  .calculator-header {
+    margin-bottom: 26px;
+  }
+
+  .calculator-box-grid {
+    gap: 24px;
+  }
+
+  .calc-controls {
+    gap: 20px;
+  }
+
+  .calc-results-card {
+    padding: 22px 18px;
+    border-radius: 16px;
+  }
+
+  .savings-number {
+    font-size: 2rem;
+  }
+
+  .range-slider::-webkit-slider-thumb {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Planos & Preços Mobile */
+  .plans-cards-grid {
+    gap: 20px;
+  }
+
+  .plan-card {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .badge-featured-tag {
+    font-size: 0.68rem;
+    padding: 4px 12px;
+  }
+
+  /* Espaço Físico Gallery Mobile */
+  .space-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .space-img-box {
+    height: 220px;
+    border-radius: 14px;
+  }
+
+  /* Barbeiros Mobile Framing */
+  .barbers-team-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .barber-profile-card {
+    border-radius: 16px;
+  }
+
+  .barber-img-container {
+    height: 330px;
+  }
+
+  .barber-img-container img {
+    object-position: top center;
+  }
+
+  .barber-card-info {
+    padding: 18px;
+  }
+
+  .barbershop-direct-contact {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    padding: 12px 14px;
+    font-size: 0.82rem;
+  }
+
+  /* Produtos Burb Mobile */
+  .products-carousel-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .product-item-card {
+    border-radius: 14px;
+  }
+
+  .product-img-box {
+    height: 140px;
+  }
+
+  .product-info {
+    padding: 12px;
+  }
+
+  .product-title {
+    font-size: 0.84rem;
+  }
+
+  .price-vip {
+    font-size: 0.88rem;
+  }
+
+  /* Formulário de Cadastro VIP Mobile */
+  .checkout-form-col {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .form-title {
+    font-size: 1.25rem;
+  }
+
+  /* Previne zoom involuntário no Safari iOS */
+  .form-group-field input,
+  .form-group-field select {
+    font-size: 16px !important;
+    padding: 13px 14px;
+    min-height: 48px;
+  }
+
+  .btn-submit-lead {
+    min-height: 52px;
+    font-size: 0.98rem;
+  }
+
+  /* FAQ & Footer Mobile */
+  .faq-question {
+    padding: 16px;
+    font-size: 0.94rem;
+  }
+
+  .faq-answer {
+    padding: 0 16px 16px;
+    font-size: 0.88rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .toast-hub {
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+  }
+
+  .toast-msg {
+    width: 100%;
+    font-size: 0.84rem;
+  }
+}
+
+@media (max-width: 420px) {
+  /* Micro telas (iPhone SE, Galaxy A, etc.) */
+  .navbar-container {
+    padding: 0 12px;
+    gap: 6px;
+  }
+
+  .brand-logo-circle {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+  }
+
+  .brand-name {
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+  }
+
+  .brand-badge {
+    font-size: 0.54rem;
+  }
+
+  .btn-cta-nav {
+    padding: 7px 11px;
+    font-size: 0.76rem;
+    gap: 4px;
+  }
+
+  .products-carousel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-img-box {
+    height: 180px;
+  }
 }
