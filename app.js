@@ -159,18 +159,18 @@ if (btnContactBarberWhatsApp) {
 }
 
 function contactBarberWhatsApp(barberName, appointmentTime) {
-  const phone = '5521999999999'; // Número concierge Luban
+  const phone = '5521965500188'; // WhatsApp Oficial Barbearia Luã Bandeira (Vila da Penha)
   const text = encodeURIComponent(
-    `Fala ${barberName}, tudo bem? Aqui é o Luiz Henrique Silva Elias. Estou confirmado para o corte de ${appointmentTime} na Luban Barbearia! Qualquer detalhe ou caso eu chegue 5 minutinhos antes, te aviso por aqui. Um abraço!`
+    `Fala ${barberName}, tudo bem? Aqui é o Luiz Henrique Silva Elias. Estou confirmado para o corte de ${appointmentTime} na Barbearia Luã Bandeira! Qualquer detalhe ou caso eu chegue 5 minutinhos antes, te aviso por aqui. Um abraço!`
   );
   window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
 }
 
-// Botão Falar com Fundador Luan
+// Botão Falar com Fundador Luã
 function contactFounderWhatsApp() {
-  const phone = '5521999999999';
+  const phone = '5521965500188';
   const text = encodeURIComponent(
-    `Olá Luan Bandeira! Sou o Luiz Henrique, membro assinante do Clube Luban. Gostaria de falar com você sobre meu plano e agendamentos.`
+    `Olá Luã Bandeira! Sou o Luiz Henrique, membro assinante do Clube Luã Bandeira. Gostaria de falar com você sobre meu plano e agendamentos.`
   );
   window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
 }
@@ -367,7 +367,7 @@ function initBookingWizard() {
           `• *Valor:* ${bookingState.price === 0 ? 'R$ 0,00 (Plano Essencial)' : 'R$ ' + bookingState.price.toFixed(2)}\n\n` +
           `Aguardamos você com drink cortesia pronto no lounge!`
         );
-        window.open(`https://wa.me/5521999999999?text=${text}`, '_blank');
+        window.open(`https://wa.me/5521965500188?text=${text}`, '_blank');
       }, 1000);
     }
   });

@@ -167,8 +167,8 @@ window.submitClubeLead = function() {
     return;
   }
 
-  // Número oficial de atendimento da barbearia
-  const whatsappNumber = '552231991720';
+  // Número oficial de atendimento da barbearia (Vila da Penha, RJ)
+  const whatsappNumber = '5521965500188';
 
   const messageText = 
     `*SOLICITAÇÃO DE ASSINATURA • CLUBE LUÃ BANDEIRA*\n\n` +
