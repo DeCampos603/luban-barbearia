@@ -29,15 +29,15 @@
   --status-red: #ef4444;
 
   /* Typography Colors */
-  --text-primary: #fcfcfd;
-  --text-secondary: #a2a3b0;
-  --text-muted: #6a6b78;
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-bright: rgba(255, 255, 255, 0.16);
+  --text-primary: #ffffff;
+  --text-secondary: #c9ccd8;
+  --text-muted: #9398a7;
+  --border-subtle: rgba(255, 255, 255, 0.10);
+  --border-bright: rgba(255, 255, 255, 0.20);
 
   /* Typography Families */
-  --font-heading: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Montserrat', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
   /* Transitions & Shadows */
   --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
