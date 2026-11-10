@@ -1,5 +1,5 @@
 @echo off
-title Luban Barbearia - Plataforma VIP Luan Bandeira
-echo Iniciando a nova plataforma Luban Barbearia...
-start "" "%~dp0index.html"
+title Barbearia Lua Bandeira - App de Agendamento VIP
+echo Abrindo Aplicativo de Agendamento...
+start "" "%~dp0agendamento.html"
 exit

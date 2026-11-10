@@ -4,1025 +4,908 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Luban Barbearia | Excelência & Agendamento VIP por Luan Bandeira</title>
+  <title>Clube de Assinatura | Barbearia Luã Bandeira — Vila da Penha, RJ</title>
   
-  <!-- Meta Tags de Alto Padrão -->
-  <meta name="description" content="Sistema exclusivo de agendamento da Luban Barbearia. Cortes de precisão, barboterapia de luxo e clube de assinatura em ambiente premium por Luan Bandeira.">
-  <meta name="keywords" content="barbearia de luxo, luan bandeira, luban barbearia, corte degradê, barboterapia, clube do assinante">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Luban Barbearia">
+  <!-- Meta Tags de Alta Conversão & SEO Local -->
+  <meta name="description" content="Mantenha seu corte e barba sempre na régua sem pagar toda vez que senta na cadeira. Conheça o Clube de Assinatura da Barbearia Luã Bandeira na Vila da Penha. Economize até 45% todo mês com cortes ilimitados, ambiente de luxo e chopp gelado.">
+  <meta name="keywords" content="barbearia vila da penha, luã bandeira, clube de assinatura barbearia, corte ilimitado rj, barboterapia vila da penha, barbearia de luxo rj">
+  <meta name="author" content="Luã Bandeira">
   <meta name="theme-color" content="#08080a">
   
-  <!-- Favicon & Touch Icons -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logo-luban.png">
   <link rel="apple-touch-icon" href="assets/logo-luban.png">
 
-  <!-- Tipografia de Alto Padrão & Legibilidade Máxima (Montserrat + Plus Jakarta Sans) -->
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Clube de Assinatura VIP • Barbearia Luã Bandeira">
+  <meta property="og:description" content="Cabelo e barba sempre impecáveis com cortes ilimitados na Vila da Penha. Economia real de até 45% por mês.">
+  <meta property="og:image" content="assets/space/espaco-interior-retro.jpg">
+
+  <!-- Schema.org Local Business para SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "Barbearia Luã Bandeira",
+    "image": "https://barbearia.luabandeira.com.br/wp-content/uploads/2025/04/LOGO-LUA-BANDEIRA-SEM-FUNDO.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Marco Polo, 296",
+      "addressLocality": "Vila da Penha",
+      "addressRegion": "RJ",
+      "postalCode": "21221-400",
+      "addressCountry": "BR"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Luã Bandeira"
+    },
+    "priceRange": "$$",
+    "telephone": "+5521965500188"
+  }
+  </script>
+
+  <!-- Google Fonts: Montserrat (Headings Luxury) & Plus Jakarta Sans (Body Ultra-Legível) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
-  
+
   <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Estilos Customizados -->
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- Estilos Customizados da Landing Page -->
+  <link rel="stylesheet" href="landing-styles.css">
 </head>
-<body class="dark-theme">
-  <!-- Efeitos de Iluminação Ambiente (GPU) -->
-  <div class="ambient-glow glow-top"></div>
-  <div class="ambient-glow glow-bottom"></div>
+<body>
 
-  <!-- Layout Principal -->
-  <div class="app-layout">
-    
-    <!-- SIDEBAR EXECUTIVA (DESKTOP) -->
-    <aside class="sidebar-desktop">
-      <div class="sidebar-brand">
-        <div class="brand-logo-wrapper">
-          <img src="assets/logo-luban.png" alt="Luban Barbearia Logo" class="brand-logo-img">
-        </div>
-        <div class="brand-text-wrapper">
-          <span class="brand-title">LUBAN</span>
-          <span class="brand-subtitle">BARBEARIA • LUAN BANDEIRA</span>
-        </div>
-      </div>
-
-      <!-- Menu Principal -->
-      <nav class="sidebar-nav">
-        <button class="nav-item active" data-view="home">
-          <i class="fa-solid fa-house-chimney"></i>
-          <span>Início</span>
-        </button>
-        <button class="nav-item" data-view="appointments">
-          <i class="fa-solid fa-calendar-check"></i>
-          <span>Agendamentos</span>
-          <span class="badge-pill">1 Ativo</span>
-        </button>
-        <button class="nav-item" data-view="club">
-          <i class="fa-solid fa-crown"></i>
-          <span>Clube VIP Black</span>
-        </button>
-        <button class="nav-item" data-view="services">
-          <i class="fa-solid fa-scissors"></i>
-          <span>Serviços & Bar</span>
-        </button>
-        <button class="nav-item" data-view="profile">
-          <i class="fa-solid fa-user-tie"></i>
-          <span>Meu Perfil</span>
-        </button>
-      </nav>
-
-      <!-- Card do Barbeiro Fundador -->
-      <div class="sidebar-founder-card">
-        <div class="founder-avatar">
-          <img src="assets/barber-luan.jpg" alt="Luan Bandeira">
-          <span class="online-indicator"></span>
-        </div>
-        <div class="founder-info">
-          <span class="founder-role">Head Barber & Founder</span>
-          <span class="founder-name">Luan Bandeira</span>
-        </div>
-        <button class="btn-concierge-quick" id="btnSidebarConcierge" title="Falar no WhatsApp com o Luan">
-          <i class="fa-brands fa-whatsapp"></i>
-        </button>
-      </div>
-
-      <!-- Rodapé Sidebar -->
-      <div class="sidebar-footer">
-        <div class="app-version">
-          <i class="fa-solid fa-shield-halved"></i>
-          <span>Luban Pro Experience • 2026</span>
-        </div>
-        <button class="btn-logout-sidebar" id="btnLogoutSidebar">
-          <i class="fa-solid fa-arrow-right-from-bracket"></i>
-          <span>Sair</span>
-        </button>
-      </div>
-    </aside>
-
-    <!-- ÁREA DE CONTEÚDO PRINCIPAL -->
-    <main class="main-content-viewport">
-      
-      <!-- HEADER MOBILE & TOPBAR -->
-      <header class="topbar-glass">
-        <div class="topbar-left">
-          <div class="mobile-logo-circle d-lg-none">
-            <img src="assets/logo-luban.png" alt="Luban Logo">
-          </div>
-          <div class="user-greeting-box">
-            <span class="greeting-subtitle">BOM DIA, MEMBRO VIP</span>
-            <h1 class="greeting-title">Luiz Henrique Silva</h1>
-          </div>
-        </div>
-
-        <div class="topbar-right">
-          <!-- Selo do Plano -->
-          <div class="plan-status-pill" id="btnOpenPlanDetails">
-            <span class="status-dot"></span>
-            <span class="plan-label">Plano Essencial</span>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-
-          <!-- Sino de Notificações -->
-          <div class="action-circle-btn" id="btnNotifications" title="Notificações">
-            <i class="fa-solid fa-bell"></i>
-            <span class="notification-indicator"></span>
-          </div>
-
-          <!-- Avatar com Foto -->
-          <div class="profile-avatar-top" id="btnHeaderProfile" title="Perfil">
-            <img src="assets/client-avatar.jpg" alt="Luiz Henrique">
-          </div>
-        </div>
-      </header>
-
-      <!-- CONTAINER DE VIEWS -->
-      <div class="viewport-scroll-area">
-        
-        <!-- ============================================== -->
-        <!-- VIEW 1: HOME (INÍCIO VIP)                      -->
-        <!-- ============================================== -->
-        <section class="view-panel active" id="view-home">
-          
-          <!-- BANNER CONCIERGE ELEGANTE (Substituição ao antigo alerta alarmista) -->
-          <div class="concierge-status-card">
-            <div class="status-card-icon">
-              <i class="fa-solid fa-credit-card"></i>
-            </div>
-            <div class="status-card-content">
-              <div class="status-card-header">
-                <span class="badge-soft-orange">Atualização do Sistema</span>
-                <span class="text-xs text-muted">Transparência Luban</span>
-              </div>
-              <h3 class="status-card-title">Mantenha sua assinatura ativa sem interrupções</h3>
-              <p class="status-card-desc">
-                Migramos para nosso gateway criptografado de alta velocidade. Confirme seu cartão para garantir seus cortes garantidos deste mês.
-              </p>
-            </div>
-            <button class="btn-card-action" id="btnOpenCardModal">
-              <span>Atualizar Cartão</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-
-          <!-- HERO CARD: PRÓXIMO ATENDIMENTO VIP (LIVE COUNTDOWN) -->
-          <div class="next-appointment-hero">
-            <div class="hero-top-bar">
-              <div class="badge-live-tag">
-                <span class="pulse-green"></span>
-                <span>PRÓXIMO HORÁRIO CONFIRMADO</span>
-              </div>
-              <div class="countdown-badge" id="countdownTimer">
-                <i class="fa-regular fa-clock"></i>
-                <span id="countdownText">Hoje às 11:30 (Em instantes)</span>
-              </div>
-            </div>
-
-            <div class="hero-body-grid">
-              <!-- Detalhes do Corte -->
-              <div class="appointment-primary-info">
-                <span class="service-category">SERVIÇO AGENDADO</span>
-                <h2 class="service-name">CORTE FADE NAVALHADO & FINALIZAÇÃO</h2>
-                
-                <div class="service-meta-tags">
-                  <span class="meta-item"><i class="fa-regular fa-calendar"></i> 10 de Novembro, 2026</span>
-                  <span class="meta-item"><i class="fa-regular fa-clock"></i> 11:30 • Duração 45 min</span>
-                  <span class="meta-item badge-free"><i class="fa-solid fa-shield-check"></i> R$ 0,00 • Incluso no Plano</span>
-                </div>
-              </div>
-
-              <!-- Barbeiro Responsável -->
-              <div class="barber-assigned-card">
-                <div class="barber-photo-box">
-                  <img src="assets/barber-luiz.jpg" alt="Luiz Henrique Silva Elias">
-                  <span class="badge-barber-rank">Master</span>
-                </div>
-                <div class="barber-meta">
-                  <span class="label-pro">SEU PROFISSIONAL</span>
-                  <h4 class="name-pro">Luiz Henrique Silva Elias</h4>
-                  <div class="barber-rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>5.0 (420+ cortes)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Botões de Ação Imediata (Experiência de Atendimento Superior) -->
-            <div class="hero-action-buttons">
-              <button class="btn-hero-action primary" id="btnContactBarberWhatsApp">
-                <i class="fa-brands fa-whatsapp"></i>
-                <span>Falar com o Barbeiro</span>
-              </button>
-              
-              <button class="btn-hero-action" id="btnAddToCalendar">
-                <i class="fa-solid fa-calendar-plus"></i>
-                <span>Salvar na Agenda</span>
-              </button>
-
-              <button class="btn-hero-action" id="btnOpenMapsRoute">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Como Chegar</span>
-              </button>
-
-              <button class="btn-hero-action subtle" id="btnRescheduleQuick">
-                <i class="fa-solid fa-clock-rotate-left"></i>
-                <span>Reagendar</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- CARTÃO BLACK VIP 3D (CLUBE DE ASSINATURA) -->
-          <div class="section-container">
-            <div class="section-header-flex">
-              <div>
-                <span class="section-badge">MEMBRO EXCLUSIVO</span>
-                <h3 class="section-title">Clube Luban Black</h3>
-              </div>
-              <button class="btn-link-action" data-nav="club">
-                <span>Ver Benefícios do Clube</span>
-                <i class="fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
-
-            <div class="black-card-virtual" id="virtualVipCard">
-              <div class="card-foil-reflection"></div>
-              <div class="card-header-row">
-                <div class="card-brand">
-                  <img src="assets/logo-symbol-orange.png" alt="Monograma Luban" class="card-monogram">
-                  <span class="card-plan-title">LUBAN BLACK • ESSENCIAL</span>
-                </div>
-                <span class="card-chip"><i class="fa-solid fa-microchip"></i> VIP</span>
-              </div>
-
-              <div class="card-number-display">
-                <span>••••</span>
-                <span>••••</span>
-                <span>••••</span>
-                <span>0824</span>
-              </div>
-
-              <div class="card-quota-progress">
-                <div class="quota-text-row">
-                  <span class="quota-label">Saldo de Cortes do Ciclo</span>
-                  <span class="quota-count"><strong>3</strong> de 4 cortes utilizados</span>
-                </div>
-                <div class="quota-bar-track">
-                  <div class="quota-bar-fill" style="width: 75%;"></div>
-                </div>
-                <span class="quota-renewal">Renovação automática em 01/12/2026</span>
-              </div>
-
-              <div class="card-footer-row">
-                <div class="card-holder-col">
-                  <span class="holder-label">TITULAR</span>
-                  <span class="holder-name">LUIZ HENRIQUE SILVA ELIAS</span>
-                </div>
-                <div class="card-perks-badges">
-                  <span class="perk-pill" title="1 Bebida premium de cortesia por visita"><i class="fa-solid fa-beer-mug-empty"></i> 1 Drink Free</span>
-                  <span class="perk-pill" title="15% de desconto em pomadas e ceras"><i class="fa-solid fa-tag"></i> 15% OFF Care</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ESPAÇO LOUNGE & BAR DA BARBEARIA (Diferencial de Atendimento) -->
-          <div class="section-container">
-            <div class="section-header-flex">
-              <div>
-                <span class="section-badge">HOSPITALIDADE PREMIUM</span>
-                <h3 class="section-title">Menu Bar & Lounge de Cortesia</h3>
-              </div>
-              <span class="text-xs text-orange"><i class="fa-solid fa-check"></i> Incluso no seu atendimento</span>
-            </div>
-
-            <div class="bar-menu-grid">
-              <div class="bar-item-card active-selection" id="drinkCardHeineken">
-                <div class="bar-img-wrap">
-                  <img src="assets/drink-heineken.jpg" alt="Heineken Gelada">
-                  <span class="bar-badge">Mais Pedida</span>
-                </div>
-                <div class="bar-item-body">
-                  <div class="bar-item-name">Cerveja Heineken Puro Malte</div>
-                  <div class="bar-item-desc">Long Neck 330ml ultra-gelada para relaxar na cadeira</div>
-                  <div class="bar-item-status" id="heinekenStatus"><i class="fa-solid fa-circle-check"></i> Selecionada para seu corte</div>
-                </div>
-              </div>
-
-              <div class="bar-item-card" id="drinkCardWhisky">
-                <div class="bar-img-wrap">
-                  <img src="assets/drink-whisky.jpg" alt="Whisky Especial">
-                  <span class="bar-badge">Premium</span>
-                </div>
-                <div class="bar-item-body">
-                  <div class="bar-item-name">Dose de Whisky Jack Daniel's</div>
-                  <div class="bar-item-desc">Servido com gelo de rocha para clientes exigentes</div>
-                  <button class="btn-select-drink" onclick="selectCourtesyDrink('Whisky Jack Daniel\'s')">Pedir este</button>
-                </div>
-              </div>
-
-              <div class="bar-item-card" id="drinkCardCafe">
-                <div class="bar-img-wrap">
-                  <img src="assets/shop-interior.jpg" alt="Café Nespresso">
-                  <span class="bar-badge">Cafeteria</span>
-                </div>
-                <div class="bar-item-body">
-                  <div class="bar-item-name">Café Nespresso Gourmet & Água com Gás</div>
-                  <div class="bar-item-desc">Ristretto encorpado com fatia de limão siciliano</div>
-                  <button class="btn-select-drink" onclick="selectCourtesyDrink('Café Nespresso Especial')">Pedir este</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SERVIÇOS EM DESTAQUE / LOOKBOOK -->
-          <div class="section-container">
-            <div class="section-header-flex">
-              <div>
-                <span class="section-badge">PRECISÃO & ESTILO</span>
-                <h3 class="section-title">Serviços Mais Solicitados</h3>
-              </div>
-              <button class="btn-link-action" data-nav="services">
-                <span>Ver Catálogo Completo</span>
-                <i class="fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
-
-            <div class="services-preview-grid">
-              <div class="service-card-item">
-                <div class="service-thumb">
-                  <img src="assets/cut-fade.jpg" alt="Corte Degradê Fade">
-                  <span class="service-duration"><i class="fa-regular fa-clock"></i> 40 min</span>
-                </div>
-                <div class="service-content">
-                  <h4 class="service-title">Degradê Fade de Alta Precisão</h4>
-                  <p class="service-description">Navalhado suave, sombreamento milimétrico e acabamento impecável.</p>
-                  <div class="service-footer-price">
-                    <span class="price-val">R$ 50,00</span>
-                    <button class="btn-quick-book" onclick="openBookingModal('Degradê Fade', 50)">Agendar</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="service-card-item">
-                <div class="service-thumb">
-                  <img src="assets/barboterapia.jpg" alt="Barboterapia com Toalha Quente">
-                  <span class="service-duration"><i class="fa-regular fa-clock"></i> 45 min</span>
-                </div>
-                <div class="service-content">
-                  <h4 class="service-title">Barboterapia Ritual Luban</h4>
-                  <p class="service-description">Toalha quente com óleos essenciais, massagem facial e navalha afiada.</p>
-                  <div class="service-footer-price">
-                    <span class="price-val">R$ 45,00</span>
-                    <button class="btn-quick-book" onclick="openBookingModal('Barboterapia Ritual', 45)">Agendar</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="service-card-item">
-                <div class="service-thumb">
-                  <img src="assets/combo.jpg" alt="Combo Cabelo e Barba">
-                  <span class="service-duration"><i class="fa-regular fa-clock"></i> 1h 20 min</span>
-                </div>
-                <div class="service-content">
-                  <h4 class="service-title">Combo Completo VIP (Cabelo + Barba)</h4>
-                  <p class="service-description">A experiência completa de transformação com finalização e lavatório com massagem.</p>
-                  <div class="service-footer-price">
-                    <span class="price-val">R$ 85,00</span>
-                    <button class="btn-quick-book" onclick="openBookingModal('Combo Completo VIP', 85)">Agendar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- BOTÃO FIXO DE NOVO AGENDAMENTO (MOBILE & QUICK ACCESS) -->
-          <div class="floating-cta-container">
-            <button class="btn-floating-appointment" id="btnMainNewAppointment">
-              <div class="cta-icon-glow">
-                <i class="fa-solid fa-plus"></i>
-              </div>
-              <div class="cta-text-group">
-                <span class="cta-main">Novo Agendamento</span>
-                <span class="cta-sub">Escolha data, barbeiro e horário em 30 segundos</span>
-              </div>
-              <i class="fa-solid fa-chevron-right cta-arrow"></i>
-            </button>
-          </div>
-
-        </section>
-
-        <!-- ============================================== -->
-        <!-- VIEW 2: APPOINTMENTS (AGENDAMENTOS)            -->
-        <!-- ============================================== -->
-        <section class="view-panel" id="view-appointments">
-          <div class="view-header-row">
-            <div>
-              <span class="section-badge">SEUS HORÁRIOS</span>
-              <h2 class="view-title">Gerenciar Agendamentos</h2>
-            </div>
-            <button class="btn-primary-small" id="btnNewAppointmentFromList">
-              <i class="fa-solid fa-plus"></i> Novo Horário
-            </button>
-          </div>
-
-          <!-- Tabs de Status -->
-          <div class="filter-tabs">
-            <button class="filter-tab active" data-filter="upcoming">Confirmados (1)</button>
-            <button class="filter-tab" data-filter="past">Histórico de Cortes</button>
-          </div>
-
-          <!-- Lista de Agendamentos -->
-          <div class="appointments-list-container" id="upcomingList">
-            <div class="appointment-card-item">
-              <div class="card-status-badge status-confirmed">
-                <i class="fa-solid fa-circle-check"></i> Horário Confirmado
-              </div>
-              <div class="card-appointment-inner">
-                <div class="appointment-date-badge">
-                  <span class="month">NOV</span>
-                  <span class="day">10</span>
-                  <span class="time">11:30</span>
-                </div>
-                <div class="appointment-details">
-                  <h3 class="item-service-title">Corte Fade Navalhado & Finalização</h3>
-                  <div class="item-barber-row">
-                    <img src="assets/barber-luiz.jpg" alt="Luiz Henrique">
-                    <span>Profissional: <strong>Luiz Henrique Silva Elias</strong></span>
-                  </div>
-                  <div class="item-extra-info">
-                    <span><i class="fa-solid fa-tag"></i> Plano Essencial (R$ 0,00)</span>
-                    <span><i class="fa-solid fa-location-dot"></i> Cadeira 02 • Lounge Principal</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card-appointment-actions">
-                <button class="btn-app-action" onclick="contactBarberWhatsApp('Luiz Henrique', '10 de Novembro às 11:30')">
-                  <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
-                </button>
-                <button class="btn-app-action" onclick="openRescheduleModal()">
-                  <i class="fa-solid fa-calendar-days"></i> Reagendar
-                </button>
-                <button class="btn-app-action danger" onclick="confirmCancelAppointment()">
-                  <i class="fa-solid fa-xmark"></i> Cancelar
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Histórico Anterior (inicialmente oculto até clicar na tab) -->
-          <div class="appointments-list-container d-none" id="pastList">
-            <div class="appointment-card-item history-item">
-              <div class="card-status-badge status-done">
-                <i class="fa-solid fa-check-double"></i> Concluído em 27/10/2026
-              </div>
-              <div class="card-appointment-inner">
-                <div class="appointment-date-badge muted">
-                  <span class="month">OUT</span>
-                  <span class="day">27</span>
-                  <span class="time">16:00</span>
-                </div>
-                <div class="appointment-details">
-                  <h3 class="item-service-title">Corte Degradê & Barboterapia Completa</h3>
-                  <div class="item-barber-row">
-                    <img src="assets/barber-luan.jpg" alt="Luan Bandeira">
-                    <span>Profissional: <strong>Luan Bandeira</strong></span>
-                  </div>
-                  <div class="review-stars-static">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>"Atendimento de mestre, como sempre impecável."</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card-appointment-actions">
-                <button class="btn-app-action" onclick="openBookingModal('Corte Degradê & Barboterapia', 85)">
-                  <i class="fa-solid fa-arrow-rotate-right"></i> Repetir Esse Corte
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ============================================== -->
-        <!-- VIEW 3: CLUB (CLUBE DO ASSINANTE BLACK)        -->
-        <!-- ============================================== -->
-        <section class="view-panel" id="view-club">
-          <div class="view-header-row">
-            <div>
-              <span class="section-badge">EXPERIÊNCIA SEM LIMITES</span>
-              <h2 class="view-title">Clube de Assinatura Luban</h2>
-              <p class="view-subtitle">Mantenha seu estilo sempre alinhado com economia de até 40% em relação aos cortes avulsos.</p>
-            </div>
-          </div>
-
-          <!-- Comparativo dos 3 Planos -->
-          <div class="club-plans-grid">
-            
-            <!-- Plano 1: Essencial (Atual do Usuário) -->
-            <div class="plan-pricing-card current-plan">
-              <div class="plan-tag current">SEU PLANO ATUAL</div>
-              <h3 class="plan-title">LUBAN ESSENCIAL</h3>
-              <p class="plan-desc">Ideal para quem precisa de cabelo sempre cortado e na régua toda semana.</p>
-              
-              <div class="plan-price-box">
-                <span class="currency">R$</span>
-                <span class="amount">129</span>
-                <span class="period">/mês</span>
-              </div>
-
-              <div class="plan-perks-list">
-                <div class="perk-row"><i class="fa-solid fa-check"></i> <strong>4 Cortes de Cabelo por mês</strong> (1 por semana)</div>
-                <div class="perk-row"><i class="fa-solid fa-check"></i> Lavatório com massagem capilar</div>
-                <div class="perk-row"><i class="fa-solid fa-check"></i> 1 Bebida cortesia por visita (Heineken ou Café)</div>
-                <div class="perk-row"><i class="fa-solid fa-check"></i> 15% de desconto em pomadas e cosméticos</div>
-              </div>
-
-              <button class="btn-plan-status" id="btnManageCurrentPlan">
-                <i class="fa-solid fa-gear"></i> Gerenciar Assinatura
-              </button>
-            </div>
-
-            <!-- Plano 2: Black VIP Cabelo & Barba (Recomendado) -->
-            <div class="plan-pricing-card featured-gold">
-              <div class="plan-tag best-seller">MAIS PROCURADO • VIP</div>
-              <h3 class="plan-title">BLACK VIP BARBA & CORTE</h3>
-              <p class="plan-desc">A assinatura definitiva para o homem que valoriza presença marcante e cuidados contínuos.</p>
-              
-              <div class="plan-price-box">
-                <span class="currency">R$</span>
-                <span class="amount">199</span>
-                <span class="period">/mês</span>
-              </div>
-
-              <div class="plan-perks-list">
-                <div class="perk-row"><i class="fa-solid fa-check"></i> <strong>Cortes de Cabelo ILIMITADOS</strong> no mês</div>
-                <div class="perk-row"><i class="fa-solid fa-check"></i> <strong>4 Barboterapias com Toalha Quente</strong></div>
-                <div class="perk-row"><i class="fa-solid fa-check"></i> Bar liberado (Heineken, Whisky Jack Daniel's, Nespresso)</div>
-                <div class="perk-row"><i class="fa-solid fa-check"></i> Fila prioritária em horários nobres (Sexta & Sábado)</div>
-                <div class="perk-row"><i class="fa-solid fa-check"></i> 25% de desconto em toda a linha de produtos</div>
-              </div>
-
-              <button class="btn-upgrade-plan" onclick="requestPlanUpgrade('Black VIP Barba & Corte', 199)">
-                <i class="fa-solid fa-crown"></i> Fazer Upgrade VIP
-              </button>
-            </div>
-
-            <!-- Plano 3: Diamond Corporate -->
-            <div class="plan-pricing-card">
-              <div class="plan-tag">EXCLUSIVE</div>
-              <h3 class="plan-title">LUBAN DIAMOND</h3>
-              <p class="plan-desc">Acesso irrestrito com atendimento exclusivo de Luan Bandeira e kit de cuidados trimestral.</p>
-              
-              <div class="plan-price-box">
-                <span class="currency">R$</span>
-                <span class="amount">289</span>
-                <span class="period">/mês</span>
-              </div>
-
-              <div class="plan-perks-list">
-                <div class="perk-row"><i class="fa-solid fa-check"></i> <strong>Acesso Total e Ilimitado</strong> (Cabelo + Barba + Sobrancelha)</div>
-                <div class="perk-row"><i class="fa-solid fa-check"></i> Atendimento prioritário direto com <strong>Luan Bandeira</strong></div>
-                <div class="perk-row"><i class="fa-solid fa-check"></i> 1 Kit de pomada + óleo de barba entregue a cada 3 meses</div>
-                <div class="perk-row"><i class="fa-solid fa-check"></i> Lounge VIP com acompanhante</div>
-              </div>
-
-              <button class="btn-plan-secondary" onclick="requestPlanUpgrade('Luban Diamond', 289)">
-                Solicitar Diamond
-              </button>
-            </div>
-
-          </div>
-        </section>
-
-        <!-- ============================================== -->
-        <!-- VIEW 4: SERVICES & BAR (CARDÁPIO COMPLETO)     -->
-        <!-- ============================================== -->
-        <section class="view-panel" id="view-services">
-          <div class="view-header-row">
-            <div>
-              <span class="section-badge">CARDÁPIO COMPLETO</span>
-              <h2 class="view-title">Serviços & Experiências</h2>
-            </div>
-          </div>
-
-          <div class="services-full-list">
-            
-            <div class="service-strip-item">
-              <div class="strip-image">
-                <img src="assets/cut-fade.jpg" alt="Corte Tradicional">
-              </div>
-              <div class="strip-details">
-                <h4 class="strip-title">Corte Masculino Clássico / Fade</h4>
-                <p class="strip-desc">Análise de visagismo facial, corte com tesoura e máquina, lavatório relaxante e finalização com pomada matte.</p>
-                <div class="strip-meta">
-                  <span><i class="fa-regular fa-clock"></i> 40 min</span>
-                  <span class="price">R$ 50,00</span>
-                </div>
-              </div>
-              <button class="btn-strip-book" onclick="openBookingModal('Corte Masculino Fade', 50)">Agendar</button>
-            </div>
-
-            <div class="service-strip-item">
-              <div class="strip-image">
-                <img src="assets/barboterapia.jpg" alt="Barboterapia">
-              </div>
-              <div class="strip-details">
-                <h4 class="strip-title">Barboterapia Ritual com Toalha Quente</h4>
-                <p class="strip-desc">Vapor de ozônio, toalhas aquecidas em óleos essenciais, massagem modeladora e alinhamento de fios na navalha.</p>
-                <div class="strip-meta">
-                  <span><i class="fa-regular fa-clock"></i> 45 min</span>
-                  <span class="price">R$ 45,00</span>
-                </div>
-              </div>
-              <button class="btn-strip-book" onclick="openBookingModal('Barboterapia Ritual', 45)">Agendar</button>
-            </div>
-
-            <div class="service-strip-item">
-              <div class="strip-image">
-                <img src="assets/combo.jpg" alt="Combo Cabelo e Barba">
-              </div>
-              <div class="strip-details">
-                <h4 class="strip-title">Combo Completo: Cabelo + Barboterapia</h4>
-                <p class="strip-desc">Nosso serviço mais elogiado. Transformação total do visual com direito a drink premium de cortesia do bar.</p>
-                <div class="strip-meta">
-                  <span><i class="fa-regular fa-clock"></i> 1h 15 min</span>
-                  <span class="price">R$ 85,00</span>
-                </div>
-              </div>
-              <button class="btn-strip-book" onclick="openBookingModal('Combo Cabelo + Barba', 85)">Agendar</button>
-            </div>
-
-            <div class="service-strip-item">
-              <div class="strip-image">
-                <img src="assets/shop-interior.jpg" alt="Pigmentação e Selagem">
-              </div>
-              <div class="strip-details">
-                <h4 class="strip-title">Camuflagem de Barba / Pigmentação</h4>
-                <p class="strip-desc">Preenchimento discreto e natural de falhas na barba ou cabelos brancos com tintura orgânica hipoalergênica.</p>
-                <div class="strip-meta">
-                  <span><i class="fa-regular fa-clock"></i> 30 min</span>
-                  <span class="price">R$ 35,00</span>
-                </div>
-              </div>
-              <button class="btn-strip-book" onclick="openBookingModal('Pigmentação de Barba', 35)">Agendar</button>
-            </div>
-
-          </div>
-        </section>
-
-        <!-- ============================================== -->
-        <!-- VIEW 5: PROFILE (PERFIL DO CLIENTE)            -->
-        <!-- ============================================== -->
-        <section class="view-panel" id="view-profile">
-          <div class="view-header-row">
-            <div>
-              <span class="section-badge">SUA CONTA</span>
-              <h2 class="view-title">Perfil do Assinante</h2>
-            </div>
-          </div>
-
-          <div class="profile-dashboard-grid">
-            
-            <!-- Card de Dados do Cliente -->
-            <div class="profile-card-box">
-              <div class="profile-top-bar">
-                <div class="profile-photo-lg">
-                  <img src="assets/client-avatar.jpg" alt="Luiz Henrique">
-                  <button class="btn-change-photo" title="Alterar foto"><i class="fa-solid fa-camera"></i></button>
-                </div>
-                <div class="profile-identity">
-                  <h3 class="profile-name">Luiz Henrique Silva Elias</h3>
-                  <span class="profile-badge-vip"><i class="fa-solid fa-crown"></i> Membro Assinante Essencial</span>
-                  <span class="profile-email">luiz.henrique@email.com • (21) 98765-4321</span>
-                </div>
-              </div>
-
-              <!-- Preferências Técnicas do Corte (Visagismo Anotado) -->
-              <div class="hair-preferences-box">
-                <div class="hair-pref-header">
-                  <i class="fa-solid fa-scissors"></i>
-                  <h4>Minhas Preferências Técnicas Salvas</h4>
-                </div>
-                <p class="hair-notes">
-                  "Degradê navalhado médio (Mid Fade) iniciando na zero alta; topo preservado com tesoura dentada para textura; barba desenhada reta nas bochechas e toalha quente."
-                </p>
-                <span class="hair-updated text-xs text-muted">Última atualização registrada pelo barbeiro Luiz Henrique em 27/10/2026</span>
-              </div>
-            </div>
-
-            <!-- Card de Cartão de Crédito e Cobrança -->
-            <div class="profile-card-box">
-              <div class="section-header-flex">
-                <h4 class="box-title"><i class="fa-solid fa-shield-halved"></i> Método de Pagamento da Assinatura</h4>
-                <span class="badge-status-active">Seguro SSL 256-bit</span>
-              </div>
-
-              <div class="registered-card-item">
-                <div class="registered-card-icon">
-                  <i class="fa-brands fa-cc-mastercard"></i>
-                </div>
-                <div class="registered-card-details">
-                  <span class="card-brand-name">Mastercard Black VIP</span>
-                  <span class="card-masked-number" id="profileCardDisplay">•••• •••• •••• 4291</span>
-                  <span class="card-expiry">Validade 08/29</span>
-                </div>
-                <button class="btn-edit-card" onclick="openCardModal()">Trocar Cartão</button>
-              </div>
-
-              <!-- Central de Suporte & Concierge -->
-              <div class="concierge-contact-strip">
-                <div class="strip-text">
-                  <h5>Precisa de ajuda ou atendimento especial?</h5>
-                  <p>Fale diretamente com o fundador Luan Bandeira pelo canal VIP do WhatsApp.</p>
-                </div>
-                <button class="btn-whatsapp-vip" onclick="contactFounderWhatsApp()">
-                  <i class="fa-brands fa-whatsapp"></i> Falar com Luan
-                </button>
-              </div>
-
-            </div>
-
-          </div>
-        </section>
-
-      </div>
-
-      <!-- BOTTOM NAVIGATION BAR (MOBILE ONLY) -->
-      <nav class="bottom-nav-mobile d-lg-none">
-        <button class="bottom-tab-item active" data-view="home">
-          <i class="fa-solid fa-house"></i>
-          <span>Início</span>
-        </button>
-        <button class="bottom-tab-item" data-view="appointments">
-          <i class="fa-solid fa-calendar-check"></i>
-          <span>Horários</span>
-        </button>
-        <button class="bottom-tab-item nav-action-glow" id="btnBottomNewAppointment">
-          <div class="glow-circle">
-            <i class="fa-solid fa-plus"></i>
-          </div>
-          <span>Agendar</span>
-        </button>
-        <button class="bottom-tab-item" data-view="club">
-          <i class="fa-solid fa-crown"></i>
-          <span>Clube</span>
-        </button>
-        <button class="bottom-tab-item" data-view="profile">
-          <i class="fa-solid fa-user"></i>
-          <span>Perfil</span>
-        </button>
-      </nav>
-
-    </main>
+  <!-- TOP ANNOUNCEMENT BAR (URGÊNCIA & ESCASSEZ VIP) -->
+  <div class="top-announcement-bar">
+    <div class="announcement-content">
+      <span class="pulse-dot"></span>
+      <span><strong>VAGAS DE NOVEMBRO:</strong> Restam apenas <span class="badge-vagas" id="vagasCount">5 vagas</span> no Clube Ilimitado da Vila da Penha</span>
+    </div>
+    <a href="#planos" class="announcement-cta">Garantir Vaga <i class="fa-solid fa-arrow-right"></i></a>
   </div>
 
-  <!-- ============================================== -->
-  <!-- MODAL: AGENDAMENTO EM 4 ETAPAS FLUIDAS         -->
-  <!-- ============================================== -->
-  <div class="modal-backdrop" id="bookingModal">
-    <div class="modal-dialog-luxury">
-      <div class="modal-header">
-        <div class="modal-title-group">
-          <span class="modal-badge">AGENDAMENTO RÁPIDO</span>
-          <h3 class="modal-title">Reserve seu Horário VIP</h3>
+  <!-- HEADER NAVEGAÇÃO -->
+  <header class="main-navbar">
+    <div class="container navbar-container">
+      <a href="#" class="brand-link">
+        <div class="brand-logo-circle">
+          <img src="assets/logo-luban.png" alt="Barbearia Luã Bandeira">
         </div>
-        <button class="modal-close-btn" id="btnCloseBookingModal">&times;</button>
-      </div>
-
-      <!-- Stepper Visual -->
-      <div class="stepper-indicator">
-        <div class="step-dot active" data-step="1">1. Serviço</div>
-        <div class="step-line"></div>
-        <div class="step-dot" data-step="2">2. Profissional</div>
-        <div class="step-line"></div>
-        <div class="step-dot" data-step="3">3. Data & Hora</div>
-        <div class="step-line"></div>
-        <div class="step-dot" data-step="4">4. Confirmação</div>
-      </div>
-
-      <div class="modal-body-content">
-        
-        <!-- ETAPA 1: SERVIÇOS -->
-        <div class="step-pane active" id="step1">
-          <h4 class="step-heading">Escolha o serviço desejado</h4>
-          <div class="services-select-grid">
-            <div class="service-select-card selected" data-service="Corte Fade Navalhado" data-price="0" data-duration="40 min" data-is-plan="true">
-              <div class="select-check"><i class="fa-solid fa-check"></i></div>
-              <div class="select-info">
-                <span class="service-badge-plan">Incluso no seu Plano</span>
-                <h5>Corte Fade Navalhado</h5>
-                <p>Degradê nas laterais, topo alinhado e finalização com pomada.</p>
-              </div>
-              <div class="select-price">R$ 0,00</div>
-            </div>
-
-            <div class="service-select-card" data-service="Barboterapia com Toalha Quente" data-price="45" data-duration="45 min" data-is-plan="false">
-              <div class="select-check"><i class="fa-solid fa-check"></i></div>
-              <div class="select-info">
-                <h5>Barboterapia com Toalha Quente</h5>
-                <p>Ritual com vaporizador, óleo essencial, massagem e navalha afiada.</p>
-              </div>
-              <div class="select-price">R$ 45,00</div>
-            </div>
-
-            <div class="service-select-card" data-service="Combo Completo (Cabelo + Barba)" data-price="85" data-duration="1h 20 min" data-is-plan="false">
-              <div class="select-check"><i class="fa-solid fa-check"></i></div>
-              <div class="select-info">
-                <h5>Combo Completo (Cabelo + Barba)</h5>
-                <p>A experiência total de renovação com drink de cortesia liberado.</p>
-              </div>
-              <div class="select-price">R$ 85,00</div>
-            </div>
-          </div>
+        <div class="brand-text">
+          <span class="brand-name">LUÃ BANDEIRA</span>
+          <span class="brand-badge">BARBEARIA • VILA DA PENHA</span>
         </div>
+      </a>
 
-        <!-- ETAPA 2: PROFISSIONAIS -->
-        <div class="step-pane" id="step2">
-          <h4 class="step-heading">Com quem você deseja cortar?</h4>
-          <div class="barbers-select-grid">
-            <div class="barber-select-card selected" data-barber="Luiz Henrique Silva Elias">
-              <img src="assets/barber-luiz.jpg" alt="Luiz Henrique">
-              <div class="barber-text">
-                <h5>Luiz Henrique Silva Elias</h5>
-                <span>Master Barber • Especialista em Fade e Navalha</span>
-                <div class="stars"><i class="fa-solid fa-star"></i> 5.0 (Último profissional que te atendeu)</div>
-              </div>
-              <div class="select-circle"><i class="fa-solid fa-check"></i></div>
-            </div>
+      <nav class="nav-links d-none d-lg-flex">
+        <a href="#beneficios">Vantagens</a>
+        <a href="#calculadora">Calculadora</a>
+        <a href="#planos">Planos & Preços</a>
+        <a href="#espaco">O Espaço</a>
+        <a href="#barbeiros">Nossa Equipe</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
 
-            <div class="barber-select-card" data-barber="Luan Bandeira (Fundador)">
-              <img src="assets/barber-luan.jpg" alt="Luan Bandeira">
-              <div class="barber-text">
-                <h5>Luan Bandeira (Fundador)</h5>
-                <span>Head Barber • Visagismo & Estilos Exclusivos</span>
-                <div class="stars"><i class="fa-solid fa-star"></i> 5.0 (Referência Nacional)</div>
-              </div>
-              <div class="select-circle"><i class="fa-solid fa-check"></i></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ETAPA 3: DATA E HORÁRIO -->
-        <div class="step-pane" id="step3">
-          <h4 class="step-heading">Selecione o melhor dia e horário</h4>
-          
-          <div class="date-selector-row">
-            <button class="date-chip active" data-date="Hoje (10/11)">
-              <span class="day-name">Hoje</span>
-              <span class="day-number">10 Ter</span>
-            </button>
-            <button class="date-chip" data-date="Amanhã (11/11)">
-              <span class="day-name">Amanhã</span>
-              <span class="day-number">11 Qua</span>
-            </button>
-            <button class="date-chip" data-date="Quinta (12/11)">
-              <span class="day-name">Quinta</span>
-              <span class="day-number">12 Qui</span>
-            </button>
-            <button class="date-chip" data-date="Sexta (13/11)">
-              <span class="day-name">Sexta</span>
-              <span class="day-number">13 Sex</span>
-            </button>
-            <button class="date-chip" data-date="Sábado (14/11)">
-              <span class="day-name">Sábado</span>
-              <span class="day-number">14 Sáb</span>
-            </button>
-          </div>
-
-          <div class="time-slots-container">
-            <span class="period-label"><i class="fa-regular fa-sun"></i> Turno da Manhã</span>
-            <div class="slots-grid">
-              <button class="slot-btn" data-time="09:00">09:00</button>
-              <button class="slot-btn" data-time="09:45">09:45</button>
-              <button class="slot-btn" data-time="10:30">10:30</button>
-              <button class="slot-btn active" data-time="11:30">11:30</button>
-            </div>
-
-            <span class="period-label"><i class="fa-solid fa-cloud-sun"></i> Turno da Tarde</span>
-            <div class="slots-grid">
-              <button class="slot-btn" data-time="14:00">14:00</button>
-              <button class="slot-btn" data-time="14:45">14:45</button>
-              <button class="slot-btn" data-time="15:30">15:30</button>
-              <button class="slot-btn" data-time="16:15">16:15</button>
-              <button class="slot-btn" data-time="17:00">17:00</button>
-            </div>
-
-            <span class="period-label"><i class="fa-solid fa-moon"></i> Turno da Noite</span>
-            <div class="slots-grid">
-              <button class="slot-btn" data-time="18:00">18:00</button>
-              <button class="slot-btn" data-time="18:45">18:45</button>
-              <button class="slot-btn" data-time="19:30">19:30</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- ETAPA 4: RESUMO E CONFIRMAÇÃO -->
-        <div class="step-pane" id="step4">
-          <div class="booking-summary-card">
-            <div class="summary-check-icon">
-              <i class="fa-solid fa-circle-check"></i>
-            </div>
-            <h4>Quase pronto! Confira seu agendamento</h4>
-
-            <div class="summary-list">
-              <div class="summary-item">
-                <span class="label">Serviço:</span>
-                <span class="value" id="summaryService">Corte Fade Navalhado</span>
-              </div>
-              <div class="summary-item">
-                <span class="label">Profissional:</span>
-                <span class="value" id="summaryBarber">Luiz Henrique Silva Elias</span>
-              </div>
-              <div class="summary-item">
-                <span class="label">Data & Horário:</span>
-                <span class="value" id="summaryDateTime">Hoje (10/11) às 11:30</span>
-              </div>
-              <div class="summary-item">
-                <span class="label">Bebida do Bar:</span>
-                <span class="value text-orange" id="summaryDrink">Heineken Gelada (Cortesia)</span>
-              </div>
-              <div class="summary-item total">
-                <span class="label">Valor Total:</span>
-                <span class="value total-price" id="summaryPrice">R$ 0,00 (Incluso no Plano)</span>
-              </div>
-            </div>
-
-            <div class="summary-whatsapp-notice">
-              <i class="fa-brands fa-whatsapp"></i>
-              <span>Você receberá a confirmação instantânea no seu WhatsApp com atalho para Waze e Google Agenda.</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="modal-footer">
-        <button class="btn-modal-back d-none" id="btnPrevStep">Voltar</button>
-        <button class="btn-modal-next" id="btnNextStep">Continuar</button>
+      <div class="navbar-actions">
+        <a href="#cadastro" class="btn-cta-nav">
+          <i class="fa-solid fa-crown"></i>
+          <span>Assinar Agora</span>
+        </a>
       </div>
     </div>
-  </div>
+  </header>
 
   <!-- ============================================== -->
-  <!-- MODAL: ATUALIZAR CARTÃO (MIGRAÇÃO ELEGANTE)    -->
+  <!-- HERO SECTION (PROPOSTA DE VALOR & NEURODESIGN) -->
   <!-- ============================================== -->
-  <div class="modal-backdrop" id="cardModal">
-    <div class="modal-dialog-luxury modal-sm">
-      <div class="modal-header">
-        <div class="modal-title-group">
-          <span class="modal-badge">SEGURANÇA SSL</span>
-          <h3 class="modal-title">Atualizar Cartão de Assinatura</h3>
+  <section class="hero-section">
+    <div class="ambient-glow glow-hero-1"></div>
+    <div class="ambient-glow glow-hero-2"></div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-pill-badge">
+          <i class="fa-solid fa-crown text-orange"></i>
+          <span>CLUBE EXCLUSIVO DE ASSINATURA • VILA DA PENHA</span>
         </div>
-        <button class="modal-close-btn" id="btnCloseCardModal">&times;</button>
-      </div>
-      <div class="modal-body-content">
-        <p class="text-sm text-secondary mb-4">
-          Cadastre seu novo cartão de crédito para garantir a renovação sem interrupções do seu <strong>Plano Essencial</strong> na Luban Barbearia.
+
+        <h1 class="hero-title">
+          Cabelo na régua e barba alinhada toda semana. <br>
+          <span class="text-gradient-orange">Sem surpresas no bolso.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Pare de pagar a cada visita. No <strong>Clube da Barbearia Luã Bandeira</strong>, você garante visual impecável o mês inteiro com cortes de precisão, barboterapia de luxo, cerveja Heineken gelada e <strong>economia de até 45% todo mês</strong>.
         </p>
-        <form id="formUpdateCard" onsubmit="event.preventDefault(); handleCardUpdate();">
-          <div class="form-group">
-            <label>Número do Cartão</label>
-            <div class="input-with-icon">
-              <i class="fa-regular fa-credit-card"></i>
-              <input type="text" placeholder="0000 0000 0000 0000" id="cardNumInput" required maxlength="19">
+
+        <!-- CTAs Principais -->
+        <div class="hero-cta-group">
+          <a href="#planos" class="btn-primary-glow">
+            <i class="fa-solid fa-crown"></i>
+            <span>Quero Entrar no Clube VIP</span>
+          </a>
+          <a href="#calculadora" class="btn-secondary-glass">
+            <i class="fa-solid fa-calculator"></i>
+            <span>Simular Minha Economia</span>
+          </a>
+        </div>
+
+        <!-- Prova Social no Hero -->
+        <div class="hero-social-proof">
+          <div class="proof-avatars">
+            <img src="assets/real/barber-lua-bandeira.png" alt="Luã">
+            <img src="assets/real/barber-luiz-henrique.png" alt="Luiz">
+            <img src="assets/real/barber-felipe-matheus.png" alt="Felipe">
+            <img src="assets/real/barber-gabriel-amaral.png" alt="Gabriel">
+          </div>
+          <div class="proof-text">
+            <div class="stars-row">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span><strong>4.9 / 5.0</strong> no Google</span>
+            </div>
+            <p>Mais de <strong>1.850 homens</strong> atendidos na Vila da Penha • Sem fidelidade contratual</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagem / Card Destaque Hero -->
+      <div class="hero-visual-card">
+        <div class="hero-card-floating">
+          <div class="hero-card-header">
+            <img src="assets/logo-symbol-orange.png" alt="Monograma Luã Bandeira" class="hero-monogram">
+            <span class="hero-card-tag">MEMBRO VIP ILIMITADO</span>
+          </div>
+
+          <div class="hero-image-wrap">
+            <img src="assets/space/espaco-interior-retro.jpg" alt="Interior Barbearia Luã Bandeira">
+            <div class="hero-overlay-tag">
+              <i class="fa-solid fa-beer-mug-empty"></i> Chopp & Bar Liberado
             </div>
           </div>
-          <div class="form-group">
-            <label>Nome Impresso no Cartão</label>
-            <input type="text" placeholder="LUIZ H S ELIAS" id="cardNameInput" required>
-          </div>
-          <div class="form-row-2">
-            <div class="form-group">
-              <label>Validade</label>
-              <input type="text" placeholder="MM/AA" id="cardExpInput" required maxlength="5">
+
+          <div class="hero-card-body">
+            <div class="hero-perk-row">
+              <i class="fa-solid fa-circle-check text-green"></i>
+              <span>Cortes Ilimitados em dias úteis</span>
             </div>
-            <div class="form-group">
-              <label>CVV</label>
-              <input type="password" placeholder="123" id="cardCvvInput" required maxlength="4">
+            <div class="hero-perk-row">
+              <i class="fa-solid fa-circle-check text-green"></i>
+              <span>Barboterapia com Toalha Quente</span>
+            </div>
+            <div class="hero-perk-row">
+              <i class="fa-solid fa-circle-check text-green"></i>
+              <span>Agendamento prioritário online em 30s</span>
             </div>
           </div>
-          <button type="submit" class="btn-submit-card">
-            <i class="fa-solid fa-lock"></i> Salvar Cartão com Segurança
-          </button>
-        </form>
+
+          <div class="hero-card-footer">
+            <div class="plan-price-small">
+              <span class="from">A partir de</span>
+              <span class="val">R$ 87<small>,90/mês</small></span>
+            </div>
+            <a href="#cadastro" class="btn-micro-cta">Garantir Vaga</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- BENEFÍCIOS TANGÍVEIS (POR QUE ENTRAR NO CLUBE?) -->
+  <!-- ============================================== -->
+  <section class="section-padding" id="beneficios">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="sub-badge">VANTAGENS EXCLUSIVAS</span>
+        <h2 class="title-h2">Por que os homens mais exigentes da Vila da Penha estão no Clube?</h2>
+        <p class="desc-p">Você cuida da sua imagem com consistência, sem se preocupar em calcular quanto vai gastar a cada corte.</p>
+      </div>
+
+      <div class="perks-grid">
+        <div class="perk-card">
+          <div class="perk-icon-box">
+            <i class="fa-solid fa-infinity"></i>
+          </div>
+          <h3 class="perk-title">Cortes Ilimitados no Mês</h3>
+          <p class="perk-desc">Tem um evento, reunião importante ou o degradê já começou a crescer? Agende e corte quantas vezes precisar em dias úteis sem pagar um centavo a mais.</p>
+        </div>
+
+        <div class="perk-card">
+          <div class="perk-icon-box">
+            <i class="fa-solid fa-piggy-bank"></i>
+          </div>
+          <h3 class="perk-title">Economia de até 45% todo mês</h3>
+          <p class="perk-desc">Se você corta o cabelo 2 a 3 vezes no mês, o valor avulso passaria de R$ 135 a R$ 165. No clube, você paga a partir de R$ 87,90 e economiza centenas de reais no ano.</p>
+        </div>
+
+        <div class="perk-card">
+          <div class="perk-icon-box">
+            <i class="fa-solid fa-mug-hot"></i>
+          </div>
+          <h3 class="perk-title">Hospitalidade & Bar de Cortesia</h3>
+          <p class="perk-desc">Deguste uma cerveja Heineken bem gelada, café Nespresso cremoso ou água com gás enquanto relaxa em nossas cadeiras de couro retrô.</p>
+        </div>
+
+        <div class="perk-card">
+          <div class="perk-icon-box">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+          <h3 class="perk-title">Agendamento VIP em 30 Segundos</h3>
+          <p class="perk-desc">Acesso direto ao aplicativo web da barbearia com horários preferenciais. Escolha seu barbeiro favorito e marque sem filas de espera.</p>
+        </div>
+
+        <div class="perk-card">
+          <div class="perk-icon-box">
+            <i class="fa-solid fa-spray-can-sparkles"></i>
+          </div>
+          <h3 class="perk-title">Desconto na Linha Burb Care</h3>
+          <p class="perk-desc">Assinantes têm descontos exclusivos em pomadas, shampoos antiqueda, balms e óleos da nossa linha própria de cuidados masculinos.</p>
+        </div>
+
+        <div class="perk-card">
+          <div class="perk-icon-box">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="perk-title">Zero Fidelidade ou Multas</h3>
+          <p class="perk-desc">Não te prendemos em contratos longos. Se for viajar ou precisar pausar, você tem autonomia total para gerenciar sua assinatura.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- CALCULADORA INTERATIVA DE ECONOMIA             -->
+  <!-- ============================================== -->
+  <section class="section-padding bg-surface-dark" id="calculadora">
+    <div class="container">
+      <div class="calculator-wrapper">
+        <div class="calculator-header text-center">
+          <span class="sub-badge">SIMULADOR DE VALOR REAL</span>
+          <h2 class="title-h2">Descubra quanto dinheiro você economiza no Clube</h2>
+          <p class="desc-p">Arraste os seletores abaixo e veja a diferença entre pagar cortes avulsos e assinar o plano mensal.</p>
+        </div>
+
+        <div class="calculator-box-grid">
+          <!-- Controles do Usuário -->
+          <div class="calc-controls">
+            
+            <div class="calc-slider-group">
+              <div class="slider-label-row">
+                <span class="slider-title"><i class="fa-solid fa-scissors"></i> Quantas vezes você corta o cabelo no mês?</span>
+                <span class="slider-val" id="cutFrequencyDisplay">3 vezes</span>
+              </div>
+              <input type="range" min="1" max="5" value="3" id="cutFrequencySlider" class="range-slider">
+              <div class="range-ticks">
+                <span>1x</span>
+                <span>2x</span>
+                <span>3x</span>
+                <span>4x</span>
+                <span>5x+</span>
+              </div>
+            </div>
+
+            <div class="calc-toggle-group">
+              <span class="slider-title"><i class="fa-solid fa-spa"></i> Você também cuida da barba na barbearia?</span>
+              <div class="toggle-buttons">
+                <button type="button" class="btn-toggle active" id="btnBarbaSim" onclick="toggleBarba(true)">Sim, faço a barba</button>
+                <button type="button" class="btn-toggle" id="btnBarbaNao" onclick="toggleBarba(false)">Apenas cabelo</button>
+              </div>
+            </div>
+
+            <div class="calc-info-note">
+              <i class="fa-solid fa-circle-info text-orange"></i>
+              <span>Cálculo baseado no corte avulso padrão de R$ 45,00 e barba de R$ 40,00 na Barbearia Luã Bandeira.</span>
+            </div>
+          </div>
+
+          <!-- Resultado do Comparativo -->
+          <div class="calc-results-card">
+            <span class="results-badge">SEU BALANÇO FINANCEIRO</span>
+
+            <div class="results-row-item">
+              <span class="res-label">Gastos no Modelo Avulso:</span>
+              <span class="res-value avulso" id="costAvulsoDisplay">R$ 255,00 / mês</span>
+            </div>
+
+            <div class="results-row-item">
+              <span class="res-label">No Clube Luã Bandeira:</span>
+              <span class="res-value club" id="costClubDisplay">R$ 147,90 / mês</span>
+            </div>
+
+            <div class="savings-highlight-box">
+              <span class="savings-title">SUA ECONOMIA ESTIMADA</span>
+              <div class="savings-number" id="savingsDisplay">R$ 107,10 <small>/ mês</small></div>
+              <div class="savings-year" id="savingsYearDisplay">Isso dá <strong>R$ 1.285,20</strong> economizados por ano!</div>
+            </div>
+
+            <a href="#cadastro" class="btn-calc-cta" id="btnCalcAction">
+              <span>Garantir Essa Economia Agora</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- TABELA OFICIAL DOS PLANOS (CRO HIGH-CONVERT)   -->
+  <!-- ============================================== -->
+  <section class="section-padding" id="planos">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="sub-badge">TABELA DE ASSINATURA</span>
+        <h2 class="title-h2">Escolha o plano ideal para a sua rotina</h2>
+        <p class="desc-p">Todos os planos garantem atendimento em todos os dias úteis na Rua Marco Polo 296, Vila da Penha.</p>
+      </div>
+
+      <div class="plans-cards-grid">
+        
+        <!-- CARD 1: PLANO LIGHT -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <span class="plan-tier">PLANO LIGHT</span>
+            <h3 class="plan-name">Manutenção Essencial</h3>
+            <p class="plan-summary">Ideal para quem corta a cada 10 a 15 dias e quer manter o pezinho sempre limpo.</p>
+          </div>
+
+          <div class="plan-price-block">
+            <div class="price-line">
+              <span class="category">Corte de Cabelo:</span>
+              <span class="price-num">R$ 117<small>,90/mês</small></span>
+            </div>
+            <div class="price-line">
+              <span class="category">Apenas Barba:</span>
+              <span class="price-num">R$ 137<small>,90/mês</small></span>
+            </div>
+            <div class="price-line highlight">
+              <span class="category">Cabelo + Barba:</span>
+              <span class="price-num">R$ 177<small>,90/mês</small></span>
+            </div>
+          </div>
+
+          <ul class="plan-features-list">
+            <li><i class="fa-solid fa-check text-orange"></i> Agendamento em todos os dias úteis</li>
+            <li><i class="fa-solid fa-check text-orange"></i> Lavatório com massagem capilar</li>
+            <li><i class="fa-solid fa-check text-orange"></i> 1 Bebida de cortesia por visita</li>
+            <li><i class="fa-solid fa-check text-orange"></i> 10% OFF em cosméticos Burb</li>
+            <li><i class="fa-solid fa-check text-orange"></i> Sem taxa de adesão ou fidelidade</li>
+          </ul>
+
+          <button class="btn-select-plan" onclick="selectPlanForm('Plano Light (Cabelo e Barba - R$ 177,90)')">
+            Escolher Plano Light
+          </button>
+        </div>
+
+        <!-- CARD 2: PLANO ILIMITADO (DESTAQUE MESTRE) -->
+        <div class="plan-card featured-plan">
+          <div class="badge-featured-tag">
+            <i class="fa-solid fa-fire"></i> MAIS ESCOLHIDO NA VILA DA PENHA
+          </div>
+
+          <div class="plan-header">
+            <span class="plan-tier text-orange">PLANO ILIMITADO</span>
+            <h3 class="plan-name">Liberdade Total VIP</h3>
+            <p class="plan-summary">Corte quantas vezes quiser. Nunca mais se preocupe em adiar um corte por causa de preço.</p>
+          </div>
+
+          <div class="plan-price-block">
+            <div class="price-line">
+              <span class="category">Corte de Cabelo:</span>
+              <span class="price-num text-orange">R$ 87<small>,90/mês</small></span>
+            </div>
+            <div class="price-line">
+              <span class="category">Apenas Barba:</span>
+              <span class="price-num">R$ 107<small>,90/mês</small></span>
+            </div>
+            <div class="price-line highlight-gold">
+              <span class="category">Cabelo + Barba:</span>
+              <span class="price-num text-gradient-orange">R$ 147<small>,90/mês</small></span>
+            </div>
+          </div>
+
+          <ul class="plan-features-list">
+            <li><i class="fa-solid fa-circle-check text-green"></i> <strong>Cortes Ilimitados no Mês</strong> (dias úteis)</li>
+            <li><i class="fa-solid fa-circle-check text-green"></i> Barboterapia com Toalha Quente e Navalha</li>
+            <li><i class="fa-solid fa-circle-check text-green"></i> <strong>Bar & Lounge liberado</strong> (Heineken / Café)</li>
+            <li><i class="fa-solid fa-circle-check text-green"></i> Fila prioritária no aplicativo de agendamento</li>
+            <li><i class="fa-solid fa-circle-check text-green"></i> <strong>20% OFF</strong> na linha de produtos Burb</li>
+            <li><i class="fa-solid fa-circle-check text-green"></i> Escolha com qualquer profissional da equipe</li>
+          </ul>
+
+          <button class="btn-select-plan primary" onclick="selectPlanForm('Plano Ilimitado (Cabelo e Barba - R$ 147,90)')">
+            <i class="fa-solid fa-crown"></i> Quero o Plano Ilimitado
+          </button>
+        </div>
+
+        <!-- CARD 3: COMBO COMPLETO RITUAL -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <span class="plan-tier">EXPERIÊNCIA MASTER</span>
+            <h3 class="plan-name">Visagismo & Estilo</h3>
+            <p class="plan-summary">Para quem busca acompanhamento técnico com consultoria de estilo e visagismo facial.</p>
+          </div>
+
+          <div class="plan-price-block">
+            <div class="price-line highlight">
+              <span class="category">Combo Ritual Completo:</span>
+              <span class="price-num">R$ 219<small>,90/mês</small></span>
+            </div>
+            <span class="price-caption">Corte + Barba + Sobrancelha + Camuflagem</span>
+          </div>
+
+          <ul class="plan-features-list">
+            <li><i class="fa-solid fa-check text-orange"></i> Cortes & Barbas Ilimitados no Mês</li>
+            <li><i class="fa-solid fa-check text-orange"></i> Design de Sobrancelha masculino incluso</li>
+            <li><i class="fa-solid fa-check text-orange"></i> Camuflagem de barba / fios brancos mensal</li>
+            <li><i class="fa-solid fa-check text-orange"></i> Atendimento com equipe sênior e mentores</li>
+            <li><i class="fa-solid fa-check text-orange"></i> 25% OFF em toda a linha de cosméticos</li>
+          </ul>
+
+          <button class="btn-select-plan" onclick="selectPlanForm('Combo Visagismo & Estilo (R$ 219,90)')">
+            Escolher Combo Master
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Garantia Sem Riscos -->
+      <div class="risk-reversal-box">
+        <div class="risk-icon"><i class="fa-solid fa-award"></i></div>
+        <div class="risk-text">
+          <h4>Garantia de Satisfação Luã Bandeira</h4>
+          <p>Assine seu plano hoje. Se no seu primeiro corte você não sair 100% satisfeito com o resultado, nós devolvemos o valor da sua mensalidade na hora, sem perguntas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- CONHEÇA NOSSO ESPAÇO FÍSICO NA VILA DA PENHA   -->
+  <!-- ============================================== -->
+  <section class="section-padding bg-surface-dark" id="espaco">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="sub-badge">AMBIENTE & ESTRUTURA</span>
+        <h2 class="title-h2">O Espaço Físico da Barbearia Luã Bandeira</h2>
+        <p class="desc-p">Um refúgio masculino de alto padrão na Vila da Penha projetado para transformar seu corte em um momento de puro relaxamento.</p>
+      </div>
+
+      <div class="gallery-space-grid">
+        <div class="gallery-item large">
+          <img src="assets/space/espaco-interior-retro.jpg" alt="Salão Principal com Cadeiras Retrô">
+          <div class="gallery-caption">
+            <h5>Salão Climatizado com Bancadas de Madeira</h5>
+            <span>Ambiente aconchegante com iluminação âmbar relaxante</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/space/espaco-lavatorio.jpg" alt="Lavatório com Massagem">
+          <div class="gallery-caption">
+            <h5>Lavatório Relaxante</h5>
+            <span>Massagem capilar e produtos de alta nutrição</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/space/espaco-cadeiras.jpg" alt="Cadeira Vintage de Couro">
+          <div class="gallery-caption">
+            <h5>Cadeiras Hidráulicas Retrô</h5>
+            <span>Conforto absoluto para serviços de longa duração</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/space/espaco-navalha.jpg" alt="Instrumentos de Precisão">
+          <div class="gallery-caption">
+            <h5>Instrumentos Esterilizados</h5>
+            <span>Navalhas descartáveis e lâminas japonesas afiadas</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/drink-heineken.jpg" alt="Chopp e Cervejas de Cortesia">
+          <div class="gallery-caption">
+            <h5>Bar Lounge Exclusivo</h5>
+            <span>Cerveja gelada e café gourmet sempre prontos</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card de Localização com Endereço Verificado -->
+      <div class="location-banner">
+        <div class="loc-icon-pin">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="loc-details">
+          <h4>Onde estamos localizados:</h4>
+          <p class="loc-address">Rua Marco Polo, 296 — Vila da Penha, Rio de Janeiro - RJ, CEP 21221-400</p>
+          <span class="loc-hours"><i class="fa-regular fa-clock"></i> Terça a Sábado: 09h às 20h • Estacionamento facilitado na rua</span>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Rua+Marco+Polo+296+Vila+da+Penha+Rio+de+Janeiro" target="_blank" class="btn-open-maps">
+          <i class="fa-solid fa-map-location-dot"></i> Abrir no Waze / Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- EQUIPE DE PROFISSIONAIS (AUTORIDADE REAL)      -->
+  <!-- ============================================== -->
+  <section class="section-padding" id="barbeiros">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="sub-badge">PROFISSIONAIS DE ELITE</span>
+        <h2 class="title-h2">Mestres em Visagismo e Degradê</h2>
+        <p class="desc-p">Nossa equipe é formada e treinada pelo próprio Luã Bandeira, garantindo padrão de execução milimétrico em qualquer cadeira.</p>
+      </div>
+
+      <div class="barbers-team-grid">
+        
+        <div class="barber-profile-card">
+          <div class="barber-img-container">
+            <img src="assets/real/barber-lua-bandeira.png" alt="Luã Bandeira">
+            <span class="role-badge founder">FUNDADOR & MENTOR</span>
+          </div>
+          <div class="barber-card-info">
+            <h3 class="barber-name">Luã Bandeira</h3>
+            <span class="barber-spec">Especialista em Visagismo & Fade</span>
+            <p class="barber-bio">Mais de 10 anos de carreira, palestrante, criador do Barber Talent e referência nacional em cortes masculinos.</p>
+          </div>
+        </div>
+
+        <div class="barber-profile-card">
+          <div class="barber-img-container">
+            <img src="assets/real/barber-luiz-henrique.png" alt="Luiz Henrique">
+            <span class="role-badge">MASTER BARBER</span>
+          </div>
+          <div class="barber-card-info">
+            <h3 class="barber-name">Luiz Henrique</h3>
+            <span class="barber-spec">Especialista em Fade e Navalha</span>
+            <p class="barber-bio">Precisão cirúrgica em acabamento navalhado, desenho de barba e tratamentos de barboterapia com toalha quente.</p>
+          </div>
+        </div>
+
+        <div class="barber-profile-card">
+          <div class="barber-img-container">
+            <img src="assets/real/barber-felipe-matheus.png" alt="Felipe Matheus">
+            <span class="role-badge">BARBER SPECIALIST</span>
+          </div>
+          <div class="barber-card-info">
+            <h3 class="barber-name">Felipe Matheus</h3>
+            <span class="barber-spec">Cortes Clássicos e Modernos</span>
+            <p class="barber-bio">Domínio completo de técnicas de tesoura, texturização de topo e finalizações com pomada matte.</p>
+          </div>
+        </div>
+
+        <div class="barber-profile-card">
+          <div class="barber-img-container">
+            <img src="assets/real/barber-gabriel-amaral.png" alt="Gabriel Amaral">
+            <span class="role-badge">BARBER SPECIALIST</span>
+          </div>
+          <div class="barber-card-info">
+            <h3 class="barber-name">Gabriel Amaral</h3>
+            <span class="barber-spec">Alinhamento & Pigmentação</span>
+            <p class="barber-bio">Expert em preenchimento de falhas de barba, camuflagem discreta de fios brancos e alinhamentos capilares.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- LINHA DE PRODUTOS BURB (CUIDADOS EM CASA)      -->
+  <!-- ============================================== -->
+  <section class="section-padding bg-surface-dark" id="produtos">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="sub-badge">MANUTENÇÃO EM CASA</span>
+        <h2 class="title-h2">Linha Exclusiva de Produtos Burb</h2>
+        <p class="desc-p">Desenvolvida por Luã Bandeira para manter sua barba hidratada e cabelo alinhado entre um corte e outro. Assinantes do clube têm descontos em toda a linha.</p>
+      </div>
+
+      <div class="products-carousel-grid">
+        <div class="product-item-card">
+          <div class="product-thumb">
+            <img src="assets/real/balm-burb.webp" alt="Balm para Barba Burb">
+            <span class="product-discount-tag">-20% Assinante</span>
+          </div>
+          <div class="product-body">
+            <h4 class="product-title">Balm Modelador Burb</h4>
+            <p class="product-desc">Hidratação profunda sem oleosidade, alinhando os fios da barba com fragrância amadeirada nobre.</p>
+            <div class="product-pricing">
+              <span class="price-reg">R$ 58,00</span>
+              <span class="price-vip">R$ 46,40 no Clube</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item-card">
+          <div class="product-thumb">
+            <img src="assets/real/oleo-branco-burb.webp" alt="Óleo para Barba Burb">
+            <span class="product-discount-tag">-20% Assinante</span>
+          </div>
+          <div class="product-body">
+            <h4 class="product-title">Óleo Especial para Barba</h4>
+            <p class="product-desc">Nutre a pele por baixo da barba, eliminando coceiras, descamações e pontas duplas dos fios.</p>
+            <div class="product-pricing">
+              <span class="price-reg">R$ 73,00</span>
+              <span class="price-vip">R$ 58,40 no Clube</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item-card">
+          <div class="product-thumb">
+            <img src="assets/real/shampoo-burb.jpg" alt="Shampoo Burb">
+            <span class="product-discount-tag">-20% Assinante</span>
+          </div>
+          <div class="product-body">
+            <h4 class="product-title">Shampoo Fortalecedor Burb</h4>
+            <p class="product-desc">Limpeza refrescante com mentol e biotina, fortalecendo a raiz e estimulando o crescimento capilar.</p>
+            <div class="product-pricing">
+              <span class="price-reg">R$ 49,59</span>
+              <span class="price-vip">R$ 39,60 no Clube</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item-card">
+          <div class="product-thumb">
+            <img src="assets/real/minox-burb.webp" alt="Minoxidil Burb">
+            <span class="product-discount-tag">-20% Assinante</span>
+          </div>
+          <div class="product-body">
+            <h4 class="product-title">Tônico de Crescimento Burb</h4>
+            <p class="product-desc">Fórmula potencializada para preenchimento de falhas na barba e combate à queda capilar.</p>
+            <div class="product-pricing">
+              <span class="price-reg">R$ 71,00</span>
+              <span class="price-vip">R$ 56,80 no Clube</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- FORMULÁRIO DE CADASTRO VIP (CONVERSÃO DIRETA)  -->
+  <!-- ============================================== -->
+  <section class="section-padding" id="cadastro">
+    <div class="container">
+      <div class="checkout-card-wrapper">
+        <div class="checkout-grid">
+          
+          <!-- Coluna 1: Argumentos & Benefícios -->
+          <div class="checkout-info-col">
+            <span class="sub-badge">ENTRADA IMEDIATA</span>
+            <h2 class="title-h2 text-white">Garanta sua assinatura VIP agora mesmo</h2>
+            <p class="desc-p text-secondary">
+              Preencha os dados ao lado. Nossa equipe do concierge entrará em contato com você via WhatsApp em menos de 2 minutos para confirmar sua ativação e agendar seu primeiro corte!
+            </p>
+
+            <div class="checkout-perks-summary">
+              <div class="chk-item">
+                <i class="fa-solid fa-bolt text-orange"></i>
+                <div>
+                  <strong>Ativação Instantânea</strong>
+                  <p>Comece a cortar no mesmo dia da assinatura.</p>
+                </div>
+              </div>
+
+              <div class="chk-item">
+                <i class="fa-solid fa-lock text-orange"></i>
+                <div>
+                  <strong>Pagamento Seguro</strong>
+                  <p>Cartão de crédito recorrente ou Pix mensal sem taxas ocultas.</p>
+                </div>
+              </div>
+
+              <div class="chk-item">
+                <i class="fa-solid fa-handshake text-orange"></i>
+                <div>
+                  <strong>Liberdade de Cancelamento</strong>
+                  <p>Cancele quando quiser diretamente pelo WhatsApp sem complicação.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="barbershop-direct-contact">
+              <i class="fa-brands fa-whatsapp text-green"></i>
+              <span>Dúvidas urgentes? Fale direto no WhatsApp: <strong>(21) 96550-0188</strong></span>
+            </div>
+          </div>
+
+          <!-- Coluna 2: Formulário de Alta Conversão -->
+          <div class="checkout-form-col">
+            <form id="formClubeCadastro" onsubmit="event.preventDefault(); submitClubeLead();">
+              <h3 class="form-title">Ficha de Inscrição no Clube</h3>
+              <p class="form-sub">Sem taxa de matrícula. Vagas limitadas no mês.</p>
+
+              <div class="form-group-field">
+                <label for="leadName"><i class="fa-regular fa-user"></i> Seu Nome Completo</label>
+                <input type="text" id="leadName" placeholder="Ex: Rodrigo Mendonça" required>
+              </div>
+
+              <div class="form-group-field">
+                <label for="leadWhatsapp"><i class="fa-brands fa-whatsapp"></i> Seu WhatsApp com DDD</label>
+                <input type="tel" id="leadWhatsapp" placeholder="(21) 98765-4321" required>
+              </div>
+
+              <div class="form-group-field">
+                <label for="leadPlan"><i class="fa-solid fa-crown"></i> Plano de Assinatura Desejado</label>
+                <select id="leadPlan" required>
+                  <option value="Plano Ilimitado (Cabelo e Barba - R$ 147,90)" selected>Plano Ilimitado • Cabelo & Barba (R$ 147,90/mês) - Recomendado</option>
+                  <option value="Plano Ilimitado (Apenas Corte - R$ 87,90)">Plano Ilimitado • Apenas Corte de Cabelo (R$ 87,90/mês)</option>
+                  <option value="Plano Ilimitado (Apenas Barba - R$ 107,90)">Plano Ilimitado • Apenas Barba (R$ 107,90/mês)</option>
+                  <option value="Plano Light (Cabelo e Barba - R$ 177,90)">Plano Light • Cabelo & Barba (R$ 177,90/mês)</option>
+                  <option value="Plano Light (Apenas Corte - R$ 117,90)">Plano Light • Apenas Corte (R$ 117,90/mês)</option>
+                  <option value="Combo Visagismo & Estilo (R$ 219,90)">Combo Master • Visagismo & Estilo (R$ 219,90/mês)</option>
+                </select>
+              </div>
+
+              <div class="form-group-field">
+                <label for="leadBarber"><i class="fa-solid fa-user-tie"></i> Barbeiro de Preferência</label>
+                <select id="leadBarber">
+                  <option value="Qualquer Barbeiro Disponível" selected>Qualquer profissional da equipe</option>
+                  <option value="Luã Bandeira">Luã Bandeira (Fundador & Head Barber)</option>
+                  <option value="Luiz Henrique">Luiz Henrique (Master Barber)</option>
+                  <option value="Felipe Matheus">Felipe Matheus</option>
+                  <option value="Gabriel Amaral">Gabriel Amaral</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn-submit-lead" id="btnSubmitForm">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Confirmar Minha Vaga no WhatsApp</span>
+              </button>
+
+              <span class="guarantee-text">
+                <i class="fa-solid fa-shield-halved"></i> Seus dados estão 100% seguros de acordo com a LGPD.
+              </span>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- FAQ - PERGUNTAS FREQUENTES (QUEBRA DE OBJEÇÃO) -->
+  <!-- ============================================== -->
+  <section class="section-padding bg-surface-dark" id="faq">
+    <div class="container max-w-800">
+      <div class="section-heading text-center">
+        <span class="sub-badge">TIRE SUAS DÚVIDAS</span>
+        <h2 class="title-h2">Perguntas Frequentes sobre o Clube</h2>
+        <p class="desc-p">Tudo o que você precisa saber antes de se tornar um assinante da Barbearia Luã Bandeira.</p>
+      </div>
+
+      <div class="faq-accordion">
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>O Plano Ilimitado é realmente sem limite de cortes?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Você pode agendar e cortar quantas vezes precisar em todos os dias úteis (terça a sexta-feira). Se você gosta de manter o degradê milimétrico ou o pezinho sempre perfeito toda semana, pode vir sem nenhum custo adicional.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Posso cortar no sábado com a assinatura?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Para garantir a pontualidade e o padrão exclusivo de atendimento sem filas, os planos mensais padrão funcionam em todos os dias úteis (terça a sexta-feira). Aos sábados, os atendimentos de assinantes têm condições especiais e descontos exclusivos mediante agendamento prévio com o concierge.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Tem taxa de adesão ou contrato de fidelidade?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Não cobramos taxa de adesão ou matrícula! E não há fidelidade de 12 meses: você pode pausar ou cancelar sua assinatura a qualquer momento antes da próxima renovação mensal, sem multa e sem burocracia.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Como faço para marcar os meus horários no dia a dia?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Você terá acesso exclusivo ao nosso aplicativo web de agendamento em 30 segundos. Basta selecionar o serviço, seu profissional de preferência, data e horário. O sistema já reconhece seu plano e o valor fica R$ 0,00 automaticamente!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Posso escolher qualquer barbeiro da barbearia?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Você pode escolher entre nossos Master Barbers (Luiz Henrique, Felipe Matheus, Gabriel Amaral) e contar com a consultoria e direção de Luã Bandeira. Toda a equipe é treinada rigorosamente no mesmo padrão de excelência.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- FOOTER OFICIAL                                 -->
+  <!-- ============================================== -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-brand-col">
+        <div class="brand-link">
+          <div class="brand-logo-circle">
+            <img src="assets/logo-luban.png" alt="Barbearia Luã Bandeira">
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">LUÃ BANDEIRA</span>
+            <span class="brand-badge">BARBEARIA DE ALTO PADRÃO</span>
+          </div>
+        </div>
+        <p class="footer-bio">
+          Mais que um corte, uma experiência de identidade, estilo e respeito ao homem contemporâneo. Rua Marco Polo 296, Vila da Penha, Rio de Janeiro.
+        </p>
+        <div class="social-icons-row">
+          <a href="https://www.instagram.com/luabandeirabarber/" target="_blank" title="Instagram oficial"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/5521965500188" target="_blank" title="WhatsApp da Barbearia"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://barbearia.luabandeira.com.br" target="_blank" title="Site oficial"><i class="fa-solid fa-globe"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#beneficios">Vantagens do Clube</a></li>
+          <li><a href="#calculadora">Calculadora de Economia</a></li>
+          <li><a href="#planos">Planos & Preços</a></li>
+          <li><a href="#espaco">Espaço Físico</a></li>
+          <li><a href="#barbeiros">Equipe de Barbeiros</a></li>
+          <li><a href="#faq">Dúvidas Frequentes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4>Unidade Vila da Penha</h4>
+        <p><i class="fa-solid fa-location-dot text-orange"></i> Rua Marco Polo, 296 — Vila da Penha, RJ</p>
+        <p><i class="fa-brands fa-whatsapp text-green"></i> (21) 96550-0188</p>
+        <p><i class="fa-regular fa-clock text-orange"></i> Terça a Sábado: 09:00 às 20:00</p>
+        <a href="#cadastro" class="btn-footer-cta">Quero me Cadastrar no Clube</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-flex">
+        <span>© 2026 Barbearia Luã Bandeira. Todos os direitos reservados. CNPJ ativo.</span>
+        <span>Desenvolvido com excelência & CRO por Engenharia de Software.</span>
+      </div>
+    </div>
+  </footer>
 
   <!-- TOAST NOTIFICATION CONTAINER -->
-  <div class="toast-notification-hub" id="toastContainer"></div>
+  <div class="toast-hub" id="toastHub"></div>
 
-  <!-- Scripts -->
-  <script src="app.js"></script>
+  <!-- Scripts da Landing Page -->
+  <script src="landing-app.js"></script>
 </body>
 </html>

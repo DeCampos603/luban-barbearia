@@ -1,12 +1,6 @@
 [build]
   publish = "."
 
-# Redireciona a raiz para a landing page mantendo URL limpa
-[[redirects]]
-  from = "/"
-  to = "/landing-page.html"
-  status = 200
-
 # Headers de segurança e performance
 [[headers]]
   for = "/*"
