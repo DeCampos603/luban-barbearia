@@ -1,0 +1,23 @@
+[build]
+  publish = "."
+
+# Redireciona a raiz para a landing page mantendo URL limpa
+[[redirects]]
+  from = "/"
+  to = "/landing-page.html"
+  status = 200
+
+# Headers de segurança e performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
